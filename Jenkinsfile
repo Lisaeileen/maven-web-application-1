@@ -8,6 +8,11 @@ pipeline {
                 sh 'ls -al'
             }
         }
+        stage('Maven Package') {
+            steps {
+                echo "Packaging artifact using maven..."
+                sh 'mvn clean package'
+            }
+        }
     }
 }
-lisa
