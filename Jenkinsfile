@@ -8,9 +8,9 @@ pipeline {
                 sh 'ls -al'
             }
         }
-        stage('Maven Package') {
+        stage('Maven Packages') {
             steps {
-                echo "Packaging artifact using maven..."
+                echo "Packaging artifact using maven"
                 sh 'mvn clean package'
             }
         }
